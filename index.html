@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gut Instinct | A Sci-Fi Novel by Lisa Serwin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background: #ffffff;
+      color: #111111;
+      height: 100%;
+    }
+    .splash-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    .splash-screen img {
+      width: 100%;
+      height: auto;
+      max-height: 100vh;
+      object-fit: contain;
+    }
+    .content {
+      display: none;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: #f2f2f2;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      font-style: italic;
+      color: #007acc;
+    }
+    .section {
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .cta {
+      background: #e6e6e6;
+      padding: 2rem;
+      text-align: center;
+    }
+    .cta a {
+      background: #007acc;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background: #f2f2f2;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      color: #111111;
+    }
+    form button {
+      background: #ff4081;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+    }
+    .overlay-text {
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+  </style>
+  <script>
+    function hideSplash() {
+      document.querySelector('.splash-screen').style.display = 'none';
+      document.querySelector('.content').style.display = 'block';
+    }
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.splash-screen').addEventListener('click', hideSplash);
+    });
+  </script>
+</head>
+<body>
+  <div class="splash-screen">
+    <img src="gut_instinct_cover.png" alt="Gut Instinct Book Cover">
+    <div class="overlay-text">Click to Enter</div>
+  </div>
+  <div class="content">
+    <header>
+      <h1>Gut Instinct</h1>
+      <p class="tagline">The future of humanity is already inside you.</p>
+    </header>
+    <section class="section">
+      <h2>About the Book</h2>
+      <p><em>Gut Instinct</em> is a gripping hard science-fiction novella rooted firmly in cutting-edge microbiology, neuroscience, and speculative realism. Fans of Andy Weir, Greg Egan, and Greg Bear will find themselves enthralled by this exploration of the microbiome and collective consciousness, where thrilling science pushes the boundaries between fiction and reality.</p>
+      <p>Dr. Marta Martel, a brilliant microbiologist, is assigned to reverse-engineer a rival company's groundbreaking microbiome drug. But as she delves deeper into her investigation, she uncovers undeniable evidence that the drug’s effects have been deliberately engineered—designed not to heal, but to trigger something far more profound.</p>
+      <p>Her scientific curiosity transforms into dread as she realizes the implications: Could the greatest threat to humanity be the invisible civilization flourishing within our very bodies? And if so, who—or what—is truly in control?</p>
+      <p>Perfectly crafted for readers drawn to scientifically rigorous narratives and mind-expanding possibilities, <em>Gut Instinct</em> poses profound and unsettling questions: What does it truly mean to be human? And are we ever genuinely alone within ourselves?</p>
+    </section>
+    <section class="section">
+      <h2>About the Author</h2>
+      <p>Lisa Serwin blends cutting-edge science and taut storytelling in her debut fiction novella. With a background in microbiome science and a passion for hard science fiction, she crafted narratives where innovation and humanity collide.</p>
+    </section>
+    <section class="cta">
+      <h2>Get the Book</h2>
+      <a href="#">$1 on Amazon</a>
+    </section>
+    <section class="section">
+      <h2>Stay Updated</h2>
+      <form action="https://formspree.io/f/your-id" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <section class="section">
+      <h2>Contact</h2>
+      <form action="https://formspree.io/f/your-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+    <footer>
+      &copy; 2025 Lisa Serwin. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
